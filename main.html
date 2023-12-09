@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Page</title>
+    <style>
+        /* CSS to center the chatbot widget */
+        html, body {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script async src="https://chatbot-dist.s3.us-east-2.amazonaws.com/chatbot/v2_build_chatbot.js" chatbotId="1050be38-da26-40f0-855f-be483bb05758"></script>
+</head>
+<body>
+    <h1>Click on the chatbot widget on the bottom right</h1>
+    
+    <!-- Button to load the chatbot -->
+
+
+    <script>
+        function loadChatbot() {
+            // The chatbot script is already included in the <head> of the page,
+            // so there's no need to load it again.
+            // Simply create an instance of the chatbot using the provided chatbotId.
+            new window.ChatBot.ChatBotLoader();
+        }
+    </script>
+</body>
+</html>
